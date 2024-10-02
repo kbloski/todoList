@@ -10,10 +10,10 @@ const enumStatus = Object.freeze(
 
 class TaskController {
     tasklist = [];
-    #MAX_LIST_LENGTH = 20;
+    MAX_LIST_LENGTH = 20;
 
     createTask(subtitle = 'Default Task Title', description = '') {
-        if (this.MAX_LIST_LENGTH >= this.tasklist.length);
+        if ( !(this.MAX_LIST_LENGTH > this.tasklist.length)) return null;
 
         const newTask = {
             id: Math.round(Math.random() * 100000),
