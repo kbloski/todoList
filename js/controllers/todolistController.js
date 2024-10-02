@@ -17,32 +17,30 @@ class TodoListController {
         this.listElement = listUl;
     }
 
-    #createListElement( task ){
-            const liElement = document.createElement('li');
-            liElement.classList = 'todolist-item';
-            
-            const titleEl = document.createElement('p');
-            titleEl.innerText = task.title;
-            titleEl.classList = 'todolist-item-title'
-            liElement.appendChild( titleEl );
+    #createListElement(task) {
+        const liElement = document.createElement('li');
+        liElement.classList = 'todolist-item';
 
-            const descriptionEl = document.createElement('p');
-            descriptionEl.innerText = task.description;
-            liElement.appendChild( descriptionEl);
+        const titleEl = document.createElement('p');
+        titleEl.innerText = `# ${task.title}`;
+        titleEl.classList = 'todolist-item-title'
+        liElement.appendChild(titleEl);
 
-            const buttonDel = document.createElement('button');
-            buttonDel.classList = 'btn btn-danger';
-            buttonDel.innerText = 'Usuń';
-            buttonDel.addEventListener('click', ()=>{
-                taskController.deleteById( task.id );
-                this.render();
-            })
-            liElement.appendChild( buttonDel );
+        const descriptionEl = document.createElement('p');
+        descriptionEl.innerText = task.description;
+        liElement.appendChild(descriptionEl);
 
+        const buttonDel = document.createElement('button');
+        buttonDel.classList = 'btn btn-danger';
+        buttonDel.innerText = 'Usuń';
+        buttonDel.addEventListener('click', () => {
+            taskController.deleteById(task.id);
+            this.render();
+        })
+        liElement.appendChild(buttonDel);
 
-            this.listElement.appendChild( liElement );
+        this.listElement.appendChild(liElement);
     }
-
 
     render() {
         this.listElement.innerHTML = '';
@@ -50,13 +48,11 @@ class TodoListController {
 
 
         for (const task of this.tasksList) {
-            this.#createListElement( task )
+            this.#createListElement(task)
         }
     }
 }
 
 
 export const todoListController = new TodoListController();
-taskController.createTask('Test #1', 'Opis zadania 1')
-taskController.createTask('Test #2', 'Opis zadania 2')
 todoListController.render();

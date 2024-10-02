@@ -4,17 +4,27 @@
 
 body {
     padding: 20px;
-    background: linear-gradient(30deg, rgba(0, 0, 0, 0.8), rgba(0, 189, 31, 0.5), rgb(0, 138, 0, 0.8));
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.8), rgba(109, 109, 109, 0.5), rgba(10, 10, 10, 0.8));
     min-height: 100vh;
 }
 
-h1 {
+header {
+    display: flex;
+    align-content: center;
+}
+
+h1,
+h2 {
     font-family: 'Sixtyfour-Convergence';
     width: 100%;
     position: relative;
     text-align: center;
     padding: 1rem;
     border-radius: 0 30px;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 
@@ -48,8 +58,8 @@ h1 {
     background: rgb(143, 0, 0);
 }
 
-.btn-warning {
-    background: rgb(214, 164, 0);
+.btn-success {
+    background: green;
     color: white;
 }
 
@@ -62,10 +72,10 @@ h1 {
 
 textarea.form-control {
     height: 100px;
-}   
+}
 
 .form-control {
-    font-family: 'Edu-Australia' ;
+    font-family: 'Edu-Australia';
     display: block;
     width: 100%;
     height: 2rem;
@@ -98,7 +108,6 @@ textarea.form-control {
     font-size: 30px;
 }
 
-.todolist-item > p {
+.todolist-item>p {
     word-wrap: break-word;
 }
-

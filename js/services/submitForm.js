@@ -3,9 +3,12 @@ import { todoListController } from "../controllers/todolistController.js";
 
 document.getElementById('task-form').addEventListener('submit', event => {
     event.preventDefault();
-    const title = document.getElementsByName('title')[0].value;
-    const description = document.getElementsByName('description')[0].value;
+    const title = document.getElementsByName('title')[0];
+    const description = document.getElementsByName('description')[0];
 
-    taskController.createTask(title, description);
+    taskController.createTask(title.value, description.value);
     todoListController.render();
+
+    title.value = '';
+    description.value = '';
 });
