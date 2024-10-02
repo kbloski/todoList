@@ -19,7 +19,8 @@ header {
 
 h1,
 h2 {
-    font-family: "Sixtyfour Convergence", sans-serif;
+    font-family: sans-serif;
+    color: gold;
     width: 100%;
     position: relative;
     text-align: center;
@@ -31,13 +32,18 @@ h2 {
     font-size: 1rem;
 }
 
+a {
+    font-weight: 900;
+    color: rgb(155, 47, 255);
+}
+
 
 .container {
     margin: 0 auto;
     max-width: 800px;
     padding: 10px;
     box-shadow: 0 0 10px black;
-    background-color: aliceblue;
+    background-color: rgb(37, 37, 37);
 }
 
 .btn {
@@ -46,12 +52,13 @@ h2 {
     font-weight: 700;
     border-radius: 5px;
     border: rgb(148, 148, 148);
-    background: rgb(97, 97, 97);
+    background: goldenrod;
     color: white;
 }
 
 .btn:hover {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(104, 88, 0);
+    color: white;
 }
 
 .btn:active {
@@ -62,12 +69,9 @@ h2 {
     background: rgb(143, 0, 0);
 }
 
-.btn-success {
-    background: green;
-    color: white;
-}
 
 .form-label {
+    color: goldenrod;
     font-family: 'BebasNeue';
     display: block;
     width: 100%;
