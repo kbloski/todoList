@@ -46,6 +46,7 @@ class TodoListController {
         this.listElement.innerHTML = '';
         this.tasksList = taskController.getAll();
 
+        if (this.tasksList.length === 0) this.listElement.innerHTML ='<h3>Brak zadań</h3>'
 
         for (const task of this.tasksList) {
             this.#createListElement(task)
@@ -55,6 +56,5 @@ class TodoListController {
 
 
 export const todoListController = new TodoListController();
-taskController.createTask('Task 1');
-taskController.createTask('Task 1');
+taskController.createTask('Task 1', 'Testowe zadanie 1');
 todoListController.render();
