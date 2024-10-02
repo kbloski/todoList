@@ -22,7 +22,7 @@ class TodoListController {
         liElement.classList = 'todolist-item';
 
         const titleEl = document.createElement('p');
-        titleEl.innerText = `# ${task.title}`;
+        titleEl.innerText = `#${task.title}`;
         titleEl.classList = 'todolist-item-title'
         liElement.appendChild(titleEl);
 
