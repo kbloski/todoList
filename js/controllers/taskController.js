@@ -17,7 +17,7 @@ class TaskController {
 
         const newTask = {
             id: Math.round(Math.random() * 100000),
-            subtitle: subtitle,
+            title: subtitle,
             description,
             status: enumStatus.getDefaultStatus()
         }

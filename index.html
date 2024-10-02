@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoList</title>
-    <script defet type="module" src="./js/init.js"></script>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script defer type="module" src="./js/init.js"></script>
 </head>
 <body>
-
+    <div class="container">
+        <header>
+            <h1>TodoList</h1>
+        </header>
+        <main>
+            <form id="task-form">
+                <div>
+                    <label class="form-label">Subtitle</label>
+                    <input type="text" name="title" class="form-control" required />
+                </div>
+                <div>
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" name="description"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Dodaj</button>
+                </div>
+            </form>
+            <div>
+                <h2>Lista zadań do wykonania</h2>
+                <div class="todolist"></div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
