@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Sixtyfour-Convergence';
-    src: url('/fonts//sixtyfour_convergence/SixtyfourConvergence-Regular-VariableFont_BLED\,SCAN\,XELA\,YELA.ttf');
+    src: url('../fonts//sixtyfour_convergence/SixtyfourConvergence-Regular-VariableFont_BLED\,SCAN\,XELA\,YELA.ttf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Edu-Australia';
-    src: url('/fonts/Edu_AU_VIC_WA_NT_Guides/EduAUVICWANTGuides-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Edu_AU_VIC_WA_NT_Guides/EduAUVICWANTGuides-VariableFont_wght.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url('/fonts/bebasNeue_Regular/BebasNeue-Regular.ttf');
+    src: url('../fonts/bebasNeue_Regular/BebasNeue-Regular.ttf');
     font-weight: 700;
 }
