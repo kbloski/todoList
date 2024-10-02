@@ -55,4 +55,6 @@ class TodoListController {
 
 
 export const todoListController = new TodoListController();
+taskController.createTask('Task 1');
+taskController.createTask('Task 1');
 todoListController.render();

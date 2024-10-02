@@ -26,7 +26,4 @@ document.getElementById("btn-download-task-list").addEventListener('click', even
     fileLink.innerText = `Download file link`;
     fileLink.href = url;
     fileLink.download = 'TaskList.txt'
-    console.log( fileLink)
-    
-    console.log( inputFileText)
 });

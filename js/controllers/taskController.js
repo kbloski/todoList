@@ -12,13 +12,13 @@ class TaskController {
     tasklist = [];
     MAX_LIST_LENGTH = 20;
 
-    createTask(subtitle = 'Task', description = 'Brak opisu') {
+    createTask(subtitle = 'Task', description) {
         if (!(this.MAX_LIST_LENGTH > this.tasklist.length)) return null;
 
         const newTask = {
             id: Math.round(Math.random() * 100000),
             title: subtitle,
-            description: description,
+            description: Boolean(description) ? description : 'Brak opisu',
             status: enumStatus.getDefaultStatus()
         }
 
